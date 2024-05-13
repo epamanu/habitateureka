@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+
+<!-- MDB -->
+<link rel="stylesheet" href="mdb.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Demo styles -->
+  
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+    <div class="header">
+        <div class="nav">
+          <div class="menu"> <a class="navbar__menu" href="#">
+            <img
+              src="img/menubox.png"
+              height="55"
+              alt="Eureka!*"
+              loading="lazy"
+            />
+          </a></div>
+          <div class="logo"><a class="navbar__logo" href="#">
+            <img
+              src="img/eureka!_logo_standard.png"
+              height="44"
+              alt="Eureka!*"
+              loading="lazy"
+            />
+          </a></div>
+          <div class="dropdown">
+            <a
+              data-mdb-dropdown-init
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              aria-expanded="false"
+            >
+            <img
+                src="img/eurekaseal.png"
+                height="55"
+                alt="EurekaSEAL!*"
+                loading="lazy"
+              />
+            </a>
+            
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+            <div class="container mt-5">
+            <div class="row justify-content center">    
+                
+        <form method="post">
+      <!-- Email input -->
+      <div data-mdb-input-init class="form-outline mb-4">
+        <input type="email" id="email" name="email" class="form-control" />
+        <label class="form-label" for="form1Example1">Email address</label>
+      </div>
+    
+      <!-- Password input -->
+      <div data-mdb-input-init class="form-outline mb-4">
+        <input type="password" id="password" name="password" class="form-control" />
+        <label class="form-label" for="form1Example2">Password</label>
+      </div>
+    
+      <!-- 2 column grid layout for inline styling -->
+      <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+            <label class="form-check-label" for="form1Example3"> Remember me </label>
+          </div>
+        </div>
+    
+        <div class="col">
+          <!-- Simple link -->
+          <a href="#!">Forgot password?</a>
+        </div>
+      </div>
+    
+    
+      <!-- Submit button -->
+      <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block">Sign in</button>
+    </form>
+    </div>
+    </div>
+            </ul>
+          </div>
+    
+        </div>
+
+      
+
+      </div>
+                   
+
+
+ <!-- The Modal -->
+ <div id="holamodal1" class="modal">
+                      
+                        
+                    
+                        
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    
+    <div class="filter" id="intronav">
+      <button class="filter-btn active" data-target="#block-1" > 
+        LEE!
+      </button>
+
+      <button class="filter-btn" data-target="#block-2">
+        MIRA!
+      </button>
+
+      <div class="intrologo">
+        <img class="introholalogo"
+          src="img/intro01holatitle.png"
+          height="60"
+          alt="HOLAEureka!* Intro"/>
+      
+    </div>
+
+    <button class="filter-btn" data-target="#block-3">
+      PILLA!  
+    </button>
+
+    <button class="filter-btn" data-target="#block-4">
+      LIGA!
+    </button>
+      
+      </div>
+    
+    <div class="block">
+      <div class="block-card active" id="block-1"> 
+        <div class="leetext">
+          <h2 class="leetitleM">Sigue Al</h2>
+          <h1 class="leetitleB">CONEJO</h1>
+          <h1 class="leetitleB">BLANCO</h1>
+          <p class="longtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum convallis tellus sit amet sagittis. Nullam laoreet non neque ac hendrerit. Vivamus id tempus lorem. Nulla et scelerisque nulla, eget volutpat elit. Sed at felis sollicitudin, consectetur dolor non, fermentum nulla. Quisque sit amet lacinia nunc. Curabitur pharetra nunc eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+            Integer tempus rhoncus nunc, vel malesuada mi fringilla interdum. Nulla dignissim, turpis ut posuere aliquam, nisi velit congue est, vel suscipit mauris mauris et mauris. Duis molestie lectus nunc, sit amet hendrerit dolor tempus vel. Nulla ut diam scelerisque, interdum est quis, auctor augue. Etiam pretium ipsum sed sem tincidunt, ac pulvinar ante dignissim. Vestibulum et erat at tellus vehicula fermentum fringilla in diam. Maecenas nec diam sollicitudin, lobortis nibh sed, tincidunt magna. Aenean ultricies, urna non malesuada mollis, est turpis vestibulum nisl, ac maximus odio felis sed sem. Cras aliquet vulputate nisi id elementum. Pellentesque non ullamcorper lorem. Proin eget rhoncus massa. Donec a risus ipsum. Maecenas malesuada consequat neque, nec sollicitudin dui vestibulum ut. Quisque ullamcorper lacus sed elit auctor semper. Morbi egestas pellentesque turpis, non tincidunt justo scelerisque quis. Donec at ornare nisl.
+            
+            Fusce quis dictum erat, ac ultricies nunc. Duis nec blandit arcu. Integer pellentesque ligula in mi commodo euismod. Praesent scelerisque mollis risus at maximus. Morbi semper mauris leo, id ullamcorper erat aliquet id. Maecenas porta neque turpis, ac mollis sem consectetur et. Morbi lacinia massa at purus consequat, sit amet congue elit pulvinar.
+            
+            Sed aliquet neque sed risus venenatis, convallis ullamcorper eros maximus. Quisque dignissim, ligula vitae porta egestas, nibh mauris gravida velit, imperdiet blandit eros lectus quis lorem. Fusce iaculis mattis fermentum. Ut at viverra lectus. Nullam sed facilisis ante, at venenatis ex. Proin sollicitudin elementum purus. Donec porttitor dolor id quam cursus accumsan. Praesent odio libero, ultrices vel dui in, volutpat finibus velit. Donec elementum ex eu risus aliquet finibus. Proin feugiat ligula quis lectus dapibus fermentum ac vitae eros. Vestibulum egestas dolor ex, at porttitor leo tristique eget. Nullam gravida velit eu malesuada semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis dui lectus, feugiat quis volutpat et, sagittis ut ligula. Vivamus consectetur justo vel tempus finibus.
+            
+            Donec lorem tortor, commodo et pellentesque id, dignissim sit amet libero. Donec sed elit id ligula tempus dictum. Nullam ut nulla fringilla, sollicitudin magna sit amet, placerat erat. Aliquam sapien nulla, efficitur non justo quis, ullamcorper venenatis libero. Donec egestas in est facilisis tempus. Maecenas nec gravida sapien. Pellentesque magna felis, tempor eu ornare ornare, auctor ac magna. Curabitur rutrum ullamcorper orci id lobortis. Morbi porttitor eros lorem.</p>
+          <p class="longtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum convallis tellus sit amet sagittis. Nullam laoreet non neque ac hendrerit. Vivamus id tempus lorem. Nulla et scelerisque nulla, eget volutpat elit. Sed at felis sollicitudin, consectetur dolor non, fermentum nulla. Quisque sit amet lacinia nunc. Curabitur pharetra nunc eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+            Integer tempus rhoncus nunc, vel malesuada mi fringilla interdum. Nulla dignissim, turpis ut posuere aliquam, nisi velit congue est, vel suscipit mauris mauris et mauris. Duis molestie lectus nunc, sit amet hendrerit dolor tempus vel. Nulla ut diam scelerisque, interdum est quis, auctor augue. Etiam pretium ipsum sed sem tincidunt, ac pulvinar ante dignissim. Vestibulum et erat at tellus vehicula fermentum fringilla in diam. Maecenas nec diam sollicitudin, lobortis nibh sed, tincidunt magna. Aenean ultricies, urna non malesuada mollis, est turpis vestibulum nisl, ac maximus odio felis sed sem. Cras aliquet vulputate nisi id elementum. Pellentesque non ullamcorper lorem. Proin eget rhoncus massa. Donec a risus ipsum. Maecenas malesuada consequat neque, nec sollicitudin dui vestibulum ut. Quisque ullamcorper lacus sed elit auctor semper. Morbi egestas pellentesque turpis, non tincidunt justo scelerisque quis. Donec at ornare nisl.
+            
+            Fusce quis dictum erat, ac ultricies nunc. Duis nec blandit arcu. Integer pellentesque ligula in mi commodo euismod. Praesent scelerisque mollis risus at maximus. Morbi semper mauris leo, id ullamcorper erat aliquet id. Maecenas porta neque turpis, ac mollis sem consectetur et. Morbi lacinia massa at purus consequat, sit amet congue elit pulvinar.
+            
+            Sed aliquet neque sed risus venenatis, convallis ullamcorper eros maximus. Quisque dignissim, ligula vitae porta egestas, nibh mauris gravida velit, imperdiet blandit eros lectus quis lorem. Fusce iaculis mattis fermentum. Ut at viverra lectus. Nullam sed facilisis ante, at venenatis ex. Proin sollicitudin elementum purus. Donec porttitor dolor id quam cursus accumsan. Praesent odio libero, ultrices vel dui in, volutpat finibus velit. Donec elementum ex eu risus aliquet finibus. Proin feugiat ligula quis lectus dapibus fermentum ac vitae eros. Vestibulum egestas dolor ex, at porttitor leo tristique eget. Nullam gravida velit eu malesuada semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis dui lectus, feugiat quis volutpat et, sagittis ut ligula. Vivamus consectetur justo vel tempus finibus.
+            
+            Donec lorem tortor, commodo et pellentesque id, dignissim sit amet libero. Donec sed elit id ligula tempus dictum. Nullam ut nulla fringilla, sollicitudin magna sit amet, placerat erat. Aliquam sapien nulla, efficitur non justo quis, ullamcorper venenatis libero. Donec egestas in est facilisis tempus. Maecenas nec gravida sapien. Pellentesque magna felis, tempor eu ornare ornare, auctor ac magna. Curabitur rutrum ullamcorper orci id lobortis. Morbi porttitor eros lorem.</p>
+          <p class="longtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum convallis tellus sit amet sagittis. Nullam laoreet non neque ac hendrerit. Vivamus id tempus lorem. Nulla et scelerisque nulla, eget volutpat elit. Sed at felis sollicitudin, consectetur dolor non, fermentum nulla. Quisque sit amet lacinia nunc. Curabitur pharetra nunc eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+            Integer tempus rhoncus nunc, vel malesuada mi fringilla interdum. Nulla dignissim, turpis ut posuere aliquam, nisi velit congue est, vel suscipit mauris mauris et mauris. Duis molestie lectus nunc, sit amet hendrerit dolor tempus vel. Nulla ut diam scelerisque, interdum est quis, auctor augue. Etiam pretium ipsum sed sem tincidunt, ac pulvinar ante dignissim. Vestibulum et erat at tellus vehicula fermentum fringilla in diam. Maecenas nec diam sollicitudin, lobortis nibh sed, tincidunt magna. Aenean ultricies, urna non malesuada mollis, est turpis vestibulum nisl, ac maximus odio felis sed sem. Cras aliquet vulputate nisi id elementum. Pellentesque non ullamcorper lorem. Proin eget rhoncus massa. Donec a risus ipsum. Maecenas malesuada consequat neque, nec sollicitudin dui vestibulum ut. Quisque ullamcorper lacus sed elit auctor semper. Morbi egestas pellentesque turpis, non tincidunt justo scelerisque quis. Donec at ornare nisl.
+            
+            Fusce quis dictum erat, ac ultricies nunc. Duis nec blandit arcu. Integer pellentesque ligula in mi commodo euismod. Praesent scelerisque mollis risus at maximus. Morbi semper mauris leo, id ullamcorper erat aliquet id. Maecenas porta neque turpis, ac mollis sem consectetur et. Morbi lacinia massa at purus consequat, sit amet congue elit pulvinar.
+            
+            Sed aliquet neque sed risus venenatis, convallis ullamcorper eros maximus. Quisque dignissim, ligula vitae porta egestas, nibh mauris gravida velit, imperdiet blandit eros lectus quis lorem. Fusce iaculis mattis fermentum. Ut at viverra lectus. Nullam sed facilisis ante, at venenatis ex. Proin sollicitudin elementum purus. Donec porttitor dolor id quam cursus accumsan. Praesent odio libero, ultrices vel dui in, volutpat finibus velit. Donec elementum ex eu risus aliquet finibus. Proin feugiat ligula quis lectus dapibus fermentum ac vitae eros. Vestibulum egestas dolor ex, at porttitor leo tristique eget. Nullam gravida velit eu malesuada semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis dui lectus, feugiat quis volutpat et, sagittis ut ligula. Vivamus consectetur justo vel tempus finibus.
+            
+            Donec lorem tortor, commodo et pellentesque id, dignissim sit amet libero. Donec sed elit id ligula tempus dictum. Nullam ut nulla fringilla, sollicitudin magna sit amet, placerat erat. Aliquam sapien nulla, efficitur non justo quis, ullamcorper venenatis libero. Donec egestas in est facilisis tempus. Maecenas nec gravida sapien. Pellentesque magna felis, tempor eu ornare ornare, auctor ac magna. Curabitur rutrum ullamcorper orci id lobortis. Morbi porttitor eros lorem.</p>
+
+        </div>
+        <div class="leeimg"><img src="img/img004hola.png" draggable="false"/></div>                           
+      </div>
+
+      <div class="block-card" id="block-2"> 
+        <h1 class="hola-cardtext">MIRANDO!</h1>                              
+      </div>
+
+      
+      <div class="block-card" id="block-3">  
+        <h1 class="hola-cardtext">PILLANDO!</h1>                              
+      </div>
+
+      <div class="block-card" id="block-4"> 
+        <h1 class="hola-cardtext">LIGANDO!</h1>                              
+      </div>
+
+    </div>
+
+    <button class="btn modal-btn" data-target="#holamodal1"><img class="close" src="img/closebtn.png"></button>
+   
+  </div>
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+ <!-- The WOWModal -->
+ <div id="wowmodal1" class="modal">
+                      
+                        
+                    
+                        
+  <!-- WOWModal content -->
+  <div class="modal-content">
+
+    
+    <div class="filter" id="intronav">
+      <button class="filter-btn active" data-target="#block-5" > 
+        LEE!
+      </button>
+
+      <button class="filter-btn" data-target="#block-6">
+        MIRA!
+      </button>
+
+      <div class="intrologo">
+        <img class="introholalogo"
+          src="img/intro01holatitle.png"
+          height="60"
+          alt="HOLAEureka!* Intro"/>
+      
+    </div>
+
+    <button class="filter-btn" data-target="#block-7">
+      PILLA!  
+    </button>
+
+    <button class="filter-btn" data-target="#block-8">
+      LIGA!
+    </button>
+      
+      </div>
+    
+    <div class="block">
+      <div class="block-card active" id="block-5"> 
+        <div class="leetext"><h1 class="hola-cardtext">LEYENDO!</h1></div>
+          <div class="leeimg"></div>
+        </div>
+                                      
+      </div>
+
+      <div class="block-card" id="block-6"> 
+        <h1 class="hola-cardtext">MIRANDO!</h1>                              
+      </div>
+
+      
+      <div class="block-card" id="block-7">  
+        <h1 class="hola-cardtext">PILLANDO!</h1>                              
+      </div>
+
+      <div class="block-card" id="block-8"> 
+        <h1 class="hola-cardtext">LIGANDO!</h1>                              
+      </div>
+
+    </div>
+
+    <button class="btn modal-btn" data-target="#wowmodal1"><img class="close" src="img/closebtn.png"></button>
+   
+  </div>
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+
+ <!-- The GENTEModal -->
+ <div id="gentemodal1" class="modal">
+                      
+                        
+                    
+                        
+  <!-- GENTEModal content -->
+  <div class="modal-content">
+
+    
+    <div class="filter" id="intronav">
+      <button class="filter-btn active" data-target="#block-9" > 
+        LEE!
+      </button>
+
+      <button class="filter-btn" data-target="#block-10">
+        MIRA!
+      </button>
+
+      <div class="intrologo">
+        <img class="introholalogo"
+          src="img/intro01holatitle.png"
+          height="60"
+          alt="HOLAEureka!* Intro"/>
+      
+    </div>
+
+    <button class="filter-btn" data-target="#block-11">
+      PILLA!  
+    </button>
+
+    <button class="filter-btn" data-target="#block-12">
+      LIGA!
+    </button>
+      
+      </div>
+    
+    <div class="block">
+      <div class="block-card active" id="block-9"> 
+        <h1 class="hola-cardtext">LEYENDO!</h1>                              
+      </div>
+
+      <div class="block-card" id="block-10"> 
+        <h1 class="hola-cardtext">MIRANDO!</h1>                              
+      </div>
+
+      
+      <div class="block-card" id="block-11">  
+        <h1 class="hola-cardtext">PILLANDO!</h1>                              
+      </div>
+
+      <div class="block-card" id="block-12"> 
+        <h1 class="hola-cardtext">LIGANDO!</h1>                              
+      </div>
+
+    </div>
+
+    <button class="btn modal-btn" data-target="#gentemodal1"><img class="close" src="img/closebtn.png"></button>
+   
+  </div>
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper -->
+
+  <div class="swiper mySwiper swiper-h">
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide" id="holasection">
+            <div class="swiper mySwiper2 swiper-v" >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    
+                    <div class="img" id="holacover">
+                        <img class="holaimg" src="img/img004hola.png" draggable="false"/>
+                    </div>
+                    <div class="covertitle" id="holatitle">
+                        <img src="img/img004title.png" />
+                    </div>
+                    <div class="coverexclama" id="holaexclama">
+                        <img class="holaex" src="img/imgexclama.png" />
+                    </div>
+    
+                    <div class="asteriskbtn">
+                        <img src="img/modules_asterisk_btn.png" />
+                    </div>
+    
+                    <button class="btn" data-target="#holamodal1">
+                        <img class="plusbtn" src="img/modules_plus_btn.png" />
+                   </button>
+
+
+
+
+
+                </div>
+
+                
+
+
+                <div class="swiper-slide">Vertical Slide 2</div>
+                <div class="swiper-slide">Vertical Slide 3</div>
+                <div class="swiper-slide">Vertical Slide 4</div>
+                <div class="swiper-slide">Vertical Slide 5</div>
+                <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+
+                
+
+              </div>
+              
+            </div>
+            <div class="downarrowbtn1" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+          </div>
+
+
+      <div class="swiper-slide" id="wowsection">
+        <div class="swiper mySwiper3 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="wowcover">
+                    <img class="wowimg" src="img/img005wow.png" />
+                </div>
+                <div class="covertitle" id="wowtitle">
+                    <img class="wowti" src="img/img005title.png" />
+                </div>
+                <div class="coverexclama" id="wowexclama">
+                    <img class="wowex" src="img/imgexclama.png" />
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png" />
+                </div>
+
+                <button class="btn" data-target="#wowmodal1">
+                  <img class="plusbtn" src="img/modules_plus_btn.png"/>
+             </button>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+     
+        </div>
+        <div class="downarrowbtn2" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+      </div>
+      
+      <div class="swiper-slide" id="gentesection">
+        <div class="swiper mySwiper4 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="gentecover">
+                    <img class="genteimg" src="img/img006gente.png" />
+                </div>
+                <div class="covertitle" id="gentetitle">
+                     <img class="genteti" src="img/img006title.png" />
+                </div>
+                <div class="coverexclama" id="genteexclama">
+                    <img class="genteex" src="img/imgexclama.png" />
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png" />
+                </div>
+
+                <button class="btn" data-target="#gentemodal1">
+                  <img class="plusbtn" src="img/modules_plus_btn.png" />
+             </button>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+      
+        </div>
+        <div class="downarrowbtn3" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+      </div>
+
+      <div class="swiper-slide" id="casasection">
+        <div class="swiper mySwiper5 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="casacover">
+                    <img class="casaimg" src="img/img007casa.png"/>
+                </div>
+                <div class="covertitle" id="casatitle">
+                    <img class="casati" src="img/img007title.png"/>
+                </div>
+                <div class="coverexclama" id="casaexclama">
+                    <img class="casaex" src="img/imgexclama.png"/>
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png" />
+                </div>
+
+                <div class="plusbtn">
+                    <img src="img/modules_plus_btn.png" />
+                </div>
+
+
+            </div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+         
+        </div>
+        <div class="downarrowbtn4"><img src="img/modules_downarrow.png"/></div>
+      </div>
+
+      <div class="swiper-slide" id="celebrasection">
+        <div class="swiper mySwiper6 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="celebracover">
+                    <img class="celebraimg" src="img/img008celebra.png"/>
+                </div>
+                <div class="covertitle" id="celebratitle">
+                    <img class="celebrati" src="img/img008title.png"/>
+                </div>
+                <div class="coverexclama" id="celebraexclama">
+                    <img class="celebraex" src="img/imgblackexclama.png"/>
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png"/>
+                </div>
+
+                <div class="plusbtn">
+                    <img src="img/modules_plus_btn.png"/>
+                </div>
+
+
+            </div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+      
+        </div>
+        <div class="downarrowbtn5" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+      </div>
+
+      <div class="swiper-slide" id="amigoriumsection">
+        <div class="swiper mySwiper7 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="amigoriumcover">
+                    <img class="amigoimg" src="img/img009amigorium.png" />
+                </div>
+                <div class="covertitle" id="amigoriumtitle">
+                    <img class="amigoti" src="img/img009title.png" />
+                </div>
+                <div class="coverexclama" id="amigoriumicon">
+                    <img class="amigoico" src="img/img009icon.png" />
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png" />
+                </div>
+
+                <div class="plusbtn">
+                    <img src="img/modules_plus_btn.png" />
+                </div>
+
+
+            </div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+      
+        </div>
+        <div class="downarrowbtn6" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+      </div>
+
+      <div class="swiper-slide" id="prosection">
+        <div class="swiper mySwiper8 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="img" id="procover">
+                    <img class="proimg" src="img/img010pro.png" />
+                </div>
+                <div class="covertitle" id="protitle">
+                    <img class="proti" src="img/img010title.png" />
+                </div>
+                <div class="coverexclama" id="proexclama">
+                    <img class="proex" src="img/imgexclama.png" />
+                </div>
+
+                <div class="asteriskbtn">
+                    <img src="img/modules_asterisk_btn.png" />
+                </div>
+
+                <div class="plusbtn">
+                    <img src="img/modules_plus_btn.png" />
+                </div>
+
+
+            </div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+          </div>
+      
+        </div>
+        <div class="downarrowbtn7" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+      </div>
+
+
+  <div class="swiper-slide" id="rokolasection">
+    <div class="swiper mySwiper9 swiper-v">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            
+            <div class="img" id="rokolacover">
+                <img class="rokoimg" src="img/img011rokola.png" />
+            </div>
+            <div class="covertitle" id="rokolatitle">
+                <img class="rokoti" src="img/img011title.png" />
+            </div>
+            <div class="coverexclama" id="rokolaexclama">
+                <img class="rokoex" src="img/imgexclama.png" />
+            </div>
+
+            <div class="asteriskbtn">
+                <img src="img/modules_asterisk_btn.png" />
+            </div>
+
+            <div class="plusbtn">
+                <img src="img/modules_plus_btn.png" />
+            </div>
+
+
+
+        </div>
+        <div class="swiper-slide">Vertical Slide 2</div>
+        <div class="swiper-slide">Vertical Slide 3</div>
+        <div class="swiper-slide">Vertical Slide 4</div>
+        <div class="swiper-slide">Vertical Slide 5</div>
+        <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+      </div>
+ 
+    </div>
+    <div class="downarrowbtn8" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+  </div>
+  
+  <div class="swiper-slide" id="redessection">
+    <div class="swiper mySwiper10 swiper-v">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            
+            <div class="img" id="redescover">
+                <img class="redimg" src="img/img012redes.png" />
+            </div>
+            <div class="covertitle" id="redestitle">
+                <img class="redti" src="img/img012title.png" />
+            </div>
+
+            <div class="asteriskbtn">
+                <img src="img/modules_asterisk_btn.png" />
+            </div>
+
+            <div class="plusbtn">
+                <img src="img/modules_plus_btn.png" />
+            </div>
+
+
+
+        </div>
+        <div class="swiper-slide">Vertical Slide 2</div>
+        <div class="swiper-slide">Vertical Slide 3</div>
+        <div class="swiper-slide">Vertical Slide 4</div>
+        <div class="swiper-slide">Vertical Slide 5</div>
+        <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+      </div>
+  
+    </div>
+
+    <div class="downarrowbtn9" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+  </div>
+
+  <div class="swiper-slide" id="aliadossection">
+    <div class="swiper mySwiper11 swiper-v">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            
+            <div class="img" id="aliadoscover">
+                <img class="aliaimg" src="img/img013aliados.png" />
+            </div>
+            <div class="covertitle" id="aliadostitle">
+                <img class="aliati" src="img/img013title.png" />
+            </div>
+            <div class="coverexclama" id="aliadosexclama">
+                <img class="aliaex" src="img/imgexclama.png" />
+            </div>
+
+            <div class="asteriskbtn">
+                <img src="img/modules_asterisk_btn.png" />
+            </div>
+
+            <div class="plusbtn">
+                <img src="img/modules_plus_btn.png" />
+            </div>
+
+
+        </div>
+        <div class="swiper-slide">Vertical Slide 2</div>
+        <div class="swiper-slide">Vertical Slide 3</div>
+        <div class="swiper-slide">Vertical Slide 4</div>
+        <div class="swiper-slide">Vertical Slide 5</div>
+        <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+      </div>
+     
+    </div>
+    <div class="downarrowbtn10" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+  </div>
+
+  <div class="swiper-slide" id="habitatsection">
+    <div class="swiper mySwiper12 swiper-v">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            
+            <div class="img" id="habitatcover">
+                <img class="habimg" src="img/img014habitat.png" />
+            </div>
+            <div class="covertitle" id="habitattitle">
+                <img class="habiti" src="img/img014title.png" />
+            </div>
+
+            <div class="asteriskbtn">
+                <img src="img/modules_asterisk_btn.png" />
+            </div>
+
+            <div class="plusbtn">
+                <img src="img/modules_plus_btn.png" />
+            </div>
+
+
+
+        </div>
+        <div class="swiper-slide">Vertical Slide 2</div>
+        <div class="swiper-slide">Vertical Slide 3</div>
+        <div class="swiper-slide">Vertical Slide 4</div>
+        <div class="swiper-slide">Vertical Slide 5</div>
+        <div class="swiper-slide">Vertical Slide 6</div>
+                <div class="swiper-slide">Vertical Slide 7</div>
+                <div class="swiper-slide">Vertical Slide 8</div>
+                <div class="swiper-slide">Vertical Slide 9</div>
+                <div class="swiper-slide">Vertical Slide 10</div>
+      </div>
+     
+    </div>
+    <div class="downarrowbtn11" id="downarrow"><img src="img/modules_downarrow.png"/></div>
+  </div>
+
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Arrows -->
+
+<div class="arrows">
+<div class="prev"> <img src="img/modules_leftarrow.png"></div>
+
+<div class="next"> <img src="img/modules_rightarrow.png"></div>
+</div> 
+
+
+
+
+
+<script src="popup.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+        
+      },
+   
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn1",
+       
+        
+      },
+    });
+
+  
+    var swiper2 = new Swiper(".mySwiper3", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn2",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper4", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn3",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper5", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn4",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper6", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn5",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper7", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn6",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper8", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn7",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper9", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn8",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper10", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn9",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper11", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn10",
+       
+        
+      },
+    
+    });
+
+    var swiper2 = new Swiper(".mySwiper12", {
+      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: ".downarrowbtn11",
+       
+        
+      },
+    
+    });
+
+
+  </script>
+
+
+
+
+<script type="text/javascript">
+  let $blocks = $('.block-card');
+
+$('.filter-btn').on('click', e => {
+let $btn = $(e.target).addClass('active');
+$btn.siblings().removeClass('active');
+
+let selector = $btn.data('target');
+$blocks.removeClass('active').filter(selector).addClass('active');
+});
+</script>
+
+</body>
+
+</html>

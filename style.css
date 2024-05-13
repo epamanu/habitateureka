@@ -1,0 +1,1061 @@
+
+
+@font-face {
+    font-family: 'dubielplainregular';
+    src: url('fonts/Dubiel-webfont.eot');
+    src: url('fonts/Dubiel-webfont.woff') format('woff');
+              
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'dubielitalic';
+    src: url('font/DubielItalic-webfont.eot');
+    src: url('font/DubielItalic-webfont.woff') format('woff');
+        
+        
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  /* GENERAL */
+  
+  
+  
+  
+  
+  body { 
+     
+    font-family: "Bebas Neue", sans-serif;
+    
+  }
+  
+  :root {
+    --color-primary: #FF0066;
+    --color-third: #fff443;
+    
+    
+    --item1-transform: translate(-100%, -5%) scale(1,5);
+    --item1-filter: blur(30px);
+    --item1-zIndex: 11;
+    --item1-opacity: 0;
+    
+    --item2-transform: translate(0, 0);
+    --item2-filter: blur(0);
+    --item2-zIndex: 10;
+    --item2-opacity: 1;
+  
+    --item3-transform: translate(50%, 10%) scale(0,8);
+    --item3-filter: blur(10px);
+    --item3-zIndex: 9;
+    --item3-opacity: 1;
+  
+    --item4-transform: translate(90%, 20%) scale(0,5);
+    --item4-filter: blur(30px);
+    --item4-zIndex: 8;
+    --item4-opacity: 1;
+  
+    --item5-transform: translate(120%, 30%) scale(0,3);
+    --item5-filter: blur(40px);
+    --item5-zIndex: 7;
+    --item5-opacity: 0;
+  
+  }
+
+   /* NAV */
+  
+  .header{
+    width: 100vw;
+    max-width: 100%;
+    margin: 10px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .nav{
+    width: 100vw;
+    max-width: 100%;
+    margin: auto;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .header.active {
+    display: none;
+  }
+
+  .nav.active {
+    display: none;
+  }
+  
+  /* //NAV */
+  
+  
+  /* SECTIONS */
+
+  
+
+  #holasection {
+    background-color: #FF0066;
+    
+  }
+
+  #wowsection {
+    background-color: #FF0066;
+  }
+
+  #gentesection {
+    background-color: #FF0066;
+  }
+  
+  #casasection {
+    background-color: #FF0066;
+  }
+ 
+  #celebrasection {
+    background-color:  #ffde00;
+  }
+  
+  #amigoriumsection {
+    background-color:  #ffde00;
+  }
+
+  #prosection {
+    background-color: #000;
+  }
+
+  #rokolasection {
+    background-color: #000;
+  }
+  
+  #redessection {
+    background-color: #2684b4;
+  }
+ 
+  #aliadossection {
+    background-color:  #2684b4;
+  }
+  
+  #habitatsection {
+    background-color:  #2684b4;
+  }
+
+
+/* //SECTIONS */
+ 
+
+/* SLIDES */
+
+ 
+
+
+/* // SLIDES */
+
+/* MAIN SLIDES CONTENT */
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+    
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 14px;
+     
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background: transparent;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      
+    }
+  
+  
+
+  #holacover {
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+pointer-events: none;
+
+    z-index: 4000;
+    
+  }
+
+
+ 
+  #holatitle {
+    
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 60%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -2000;
+  }
+ 
+  #holaexclama {
+    
+ 
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 57%;
+    left: 70%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+  
+
+  #wowcover {
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+
+  #wowcover img{
+    height: 80vh;
+    width: auto;
+  }
+ 
+  #wowtitle {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -2000;
+  }
+ 
+  #wowexclama {
+    
+    position: absolute;
+   
+    display: flex;
+    align-items: center;
+    top: 45%;
+    left: 70%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+
+  #gentecover {
+    
+    
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+ 
+  #gentetitle {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -2000;
+  }
+ 
+  #genteexclama {
+    position: absolute;
+ 
+   
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+
+  #casacover {
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+ 
+  #casatitle {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -2000;
+  }
+ 
+  #casaexclama {
+    
+    position: absolute;
+   
+    display: flex;
+    align-items: center;
+    top: 65%;
+    left: 77%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+
+  #celebracover {
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+
+  
+  #celebratitle {
+    
+    position: absolute;
+  
+    
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+ 
+  #celebraexclama {
+    
+    
+    position: absolute;
+   
+    display: flex;
+    align-items: center;
+    top: 45%;
+    left: 73%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+
+  #amigoriumcover {
+    
+    
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+    z-index: 4000;
+    
+  }
+ 
+  #amigoriumtitle {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 70%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+ 
+  #amigoriumicon {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 25%;
+    left: 40%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+
+ 
+
+  #procover {
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+  }
+ 
+  #protitle {
+    
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    top: 60%;
+    left: 40%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+ 
+  #proexclama {
+    
+   
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 55%;
+    left: 60%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+
+  #rokolacover {
+    
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+
+  #rokolacover img{
+    height: 90vh;
+    width: auto;
+  }
+ 
+  #rokolatitle {
+    position: absolute;
+   
+   
+    display: flex;
+    align-items: center;
+    top: 58%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+
+ 
+ 
+  #rokolaexclama {
+    
+    position: absolute;
+ 
+    display: flex;
+    align-items: center;
+    top: 55%;
+    left: 70%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 6000;
+  }
+
+  
+  #redescover {
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+  }
+ 
+  #redestitle {
+    
+    
+    position: absolute;
+   
+    display: flex;
+    align-items: center;
+    top: 58%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+
+  #aliadoscover {
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 4000;
+    
+  }
+
+  #aliadoscover img{
+    height: 80vh;
+    width: auto;
+  }
+ 
+  #aliadostitle {
+    
+    position: absolute;
+
+   
+    display: flex;
+    align-items: center;
+    top: 58%;
+    left: 23%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -2000;
+  }
+  
+  #aliadostitle img{
+    height: 80vh;
+    width: auto;
+  }
+ 
+  #aliadosexclama {
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 65%;
+    left: 56%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: -1000;
+  }
+
+
+  #habitatcover {
+    
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 6000;
+    
+  }
+
+  #habitatcover img{
+ 
+    
+
+   
+    transform: translateY(20%);
+  }
+ 
+  #habitattitle {
+    position: absolute;
+  
+   
+    display: flex;
+    align-items: center;
+    top: 45%;
+    left: 25%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+  
+/* // MAIN SLIDES CONTENT */
+
+/* SLIDES BUTTONS CONTENT */
+
+.asteriskbtn{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+
+
+
+.plusbtn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#downarrow {
+  display: block;
+}
+
+
+
+#downarrow.active {
+  display: none;
+}
+
+.downarrowbtn1 {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    z-index: 30000;
+}
+
+.downarrowbtn2{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: 30000;
+}
+
+.downarrowbtn3{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: 30000;
+}
+
+.downarrowbtn4{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: 30000;
+}
+
+.downarrowbtn5{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: 30000;
+}
+
+.downarrowbtn6{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: 30000;
+}
+
+.downarrowbtn7{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  z-index: 30000;
+}
+
+.downarrowbtn8{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  z-index: 30000;
+}
+
+.downarrowbtn9{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  z-index: 30000;
+}
+
+.downarrowbtn10{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  z-index: 30000;
+}
+
+.downarrowbtn11{
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+  z-index: 30000;
+}
+
+/* arrows */
+
+.arrows{
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  max-width: 99%;
+  left: 50%;
+  transform: TranslateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  
+}
+
+.arrows.active {
+  display: none;
+}
+
+.arrows .next,
+.arrows .prev{
+  border: none;
+  background-color: transparent;
+}
+/* // SLIDES BUTTONS CONTENT */
+
+/* HOLA INNER SLIDES CONTENT */
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  
+  position: fixed; /* Stay in place */
+  z-index: 1000000; /* Sit on top */
+  top: 0;
+  left: 0;
+  
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  
+  background-color: #ff0066
+  
+}
+
+.modal.active {
+  display: block;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position:absolute;
+  background-color: #FF0066;
+  margin: 0px; /* 15% from the top and centered */
+  padding: 0px;
+  border: 0px;
+  width: 100%; /* Could be more or less, depending on screen size */
+  height: 100%;
+  z-index: 5000000;
+}
+
+
+
+/* The Close Button */
+.close {
+  position: fixed;
+ 
+  right: 20px;
+  bottom: 5px;
+  z-index: 6000000;
+}
+
+
+
+
+
+#intronav{
+  top: 30px;
+  width: 100vw;
+  z-index: 5000003;
+  
+  padding-right: 120px;
+  padding-left: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  
+}
+
+.filter-btn {
+  font-size: 40px;
+  color: #ffde00;
+  text-decoration: none;
+}
+
+.filter-btn:hover {
+  text-decoration: underline;
+  color: #ffde00;
+}
+
+
+
+
+
+
+
+.block-card{
+  
+  
+  display: none;
+  
+}
+
+.block-card.active{
+  display: block;
+  
+  overflow: auto;  
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 500000;
+  border-style: none;
+}
+
+
+
+.leetext {
+  position: absolute;
+  display: grid;
+	align-items: center;
+  padding-left: 400px;
+  padding-top: 120px;
+  padding-right: 100px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 5000002;
+}
+
+.leetitleM {
+  color: #ffde00;
+  font-size: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.leetitleB {
+  color: #ffde00;
+  font-size: 9rem;
+  font-family: "dubielplainregular";
+  padding: 0;
+  margin: 0;
+}
+
+.longtext {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.leeimg {
+
+  position: fixed;
+  height: 100vh;
+  left: -10%;
+  z-index: 5000001;
+}
+
+
+
+
+
+/* //HOLA INNER SLIDES CONTENT */
+
+
+/* MEDIA QUERY */
+
+
+/* For Desktop View */
+@media all and (min-width: 1024px) {
+  
+  .holaimg{
+    height: 80vh;
+    width: auto;
+  }
+ 
+}
+
+/* For Tablet View */
+@media all and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+  .holaimg{
+    height: 80vh;
+    width: auto;
+    }
+
+
+   }
+
+
+
+/* For Mobile Portrait View */
+@media all and (max-device-width: 480px) 
+  and (orientation: portrait) {
+    .holaimg{
+      height: 80vh;
+    width: auto;
+    }
+
+ 
+  }
+
+
+/* For Mobile Landscape View */
+@media all and (max-device-width: 640px) 
+  and (orientation: landscape) {
+  .holaimg{
+    height: 80vh;
+    width: auto;
+    }
+  }
+
+
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media all
+  and (max-device-width: 640px) {
+  .holaimg{
+    height: 80vh;
+    width: auto;
+    }
+
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media all and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .holaimg{
+    height: 50vh;
+    width: auto;
+    }
+
+ 
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media all and (device-height: 568px) 
+  and (device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .holaimg{
+    height: 60vh;
+    width: auto;
+    }
+   
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media all and (min-device-height: 667px) 
+  and (min-device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .holaimg{
+    height: 60vh;
+    width: auto;
+    }
+
+   
+};
+
+/* /MEDIA QUERY */
